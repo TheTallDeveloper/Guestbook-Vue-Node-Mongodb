@@ -8,9 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const users = require("./routes/api/users");
+const Msgs = require("./routes/api/Msgs");
 
-app.use("/api/users", users);
+app.use("/api/Msgs", Msgs);
 
 // handle production
 
